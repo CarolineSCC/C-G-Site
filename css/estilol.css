@@ -1,0 +1,235 @@
+header {
+    background-color: #ffffff; /* Cor de fundo */
+    padding: 20px 0;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    height: 30px;
+  }
+  /* Estilo do botão para abrir o menu mobile */
+  .menu-mobile-toggle {
+    display: flex;
+    font-size: 24px;
+    color: #860508;
+    cursor: pointer;
+    margin: 10px;
+    position:fixed;
+    right: 20px;
+  
+  }
+  
+  /* Botão para fechar o menu */
+  .close-menu {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 0;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .close-menu:hover {
+    transform: scale(1.2); /* Leve efeito de zoom ao passar o mouse */
+    color: #000000; /* Muda a cor ao passar o mouse */
+  }
+  
+  /* Menu mobile inicialmente escondido */
+  .menu-mobile {
+    display: none;
+    background-color: #860508;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 80vh;
+    z-index: 1000;
+    padding: 40px;
+  
+  }
+  
+  .menu-mobile ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-mobile ul li {
+    margin: 20px 0;
+  }
+  
+  .menu-mobile ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 20px 0;
+    display: block;
+  }
+  .menu-mobile ul li a:hover {
+    color: #000000; /* Cor diferente ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento no tamanho */
+    background-color: #ffffff7e;
+  }
+
+main {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background:  #860508;
+    overflow-x: hidden;
+    margin-top: 10px;
+}
+
+/* Fundo Parallax */
+.parallax {
+    position: relative;
+    background-image: url('https://source.unsplash.com/1600x900/?love,romantic');
+    height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    margin: -50px auto 0 auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #860508;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.heart {
+    font-size: 2.5rem;
+    color: #860508;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Botão Interativo */
+.btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #860508;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #860508;
+}
+
+/* Corações Flutuantes */
+.floating-heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: rise 5s linear infinite;
+}
+
+.floating-heart:nth-child(1) { left: 10%; animation-delay: 1s; }
+.floating-heart:nth-child(2) { left: 30%; animation-delay: 2s; }
+.floating-heart:nth-child(3) { left: 50%; animation-delay: 3s; }
+.floating-heart:nth-child(4) { left: 70%; animation-delay: 4s; }
+.floating-heart:nth-child(5) { left: 90%; animation-delay: 5s; }
+
+@keyframes rise {
+    0% { bottom: 0; opacity: 0.5; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { bottom: 100%; opacity: 0; transform: scale(1.2); }
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .parallax {
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+    .heart {
+        font-size: 1.2rem; /* Reduzido de 2.5rem para 1.5rem */
+        color: #860508;
+        animation: float 3s ease-in-out infinite;
+    }
+}
+
+/*Cabeçalho*/
+@media screen and (max-width: 590px){
+    .container{
+    display:none;
+    }
+  }
+
+/* Tornar o botão visível em telas pequenas */
+@media screen and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+  
+    .menu-mobile-toggle {
+        display: block;
+    }
+  }

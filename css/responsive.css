@@ -1,0 +1,70 @@
+
+
+/*Carrossel*/
+@media screen and (max-width: 980px) {
+    .slides-front {
+        margin-top: 130px;
+        width: 100%; /* Largura 100% para telas menores */
+        height: 200px; /* Ajuste na altura para dispositivos móveis */
+    }
+
+    .slide {
+        width: 100%; /* Largura 100% dos slides em telas pequenas */
+        height: 200px; /* Ajuste na altura do slide para telas pequenas */
+
+    }
+
+    .nav label {
+        font-size: 50pt; /* Ajuste o tamanho das setas de navegação para telas menores */
+        width: 50px; /* Largura reduzida para as setas */
+        height: 100%; /* Altura mantida */
+        line-height: 200px; /* Ajuste o line-height para centralizar as setas */
+    }
+
+    .nav-dots {
+        bottom: 5px; /* Ajuste da posição dos pontos */
+    }
+
+    .nav-dots .nav-dot {
+        width: 8px; /* Tamanho reduzido dos pontos de navegação */
+        height: 8px;
+        margin: 0 3px; /* Menor espaçamento entre os pontos */
+    }
+}
+
+
+@media screen and(max-width: 980px) {
+
+  .image-container3 img {
+    width: 50%; /* Ajuste conforme necessário */
+    margin: 0 10px; /* Espaçamento horizontal */
+  }
+}
+
+
+@media (max-width: 768px) {
+    .video-container {
+      padding: 5px; /* Menos padding em telas pequenas */
+      flex-direction: column;
+      
+    }
+  
+    .video-container video {
+      max-width: 100%;  /* O vídeo ocupa toda a largura da tela */
+      max-height: 60vh; /* Ajusta o vídeo para não ocupar toda a altura da tela */
+    }
+  }
+ 
+
+
+
+/* Tornar o botão visível em telas pequenas */
+@media screen and (max-width: 768px) {
+  .menu-desktop {
+      display: none;
+  }
+
+  .menu-mobile-toggle {
+      display: block;
+  }
+}

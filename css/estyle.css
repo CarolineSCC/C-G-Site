@@ -1,0 +1,138 @@
+header {
+  background-color: #ffffff; /* Cor de fundo */
+  padding: 20px 0;
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens no centro */
+  height: 30px;
+}
+/* Estilo do botão para abrir o menu mobile */
+.menu-mobile-toggle {
+  display: none;
+  font-size: 24px;
+  color: #860508;
+  cursor: pointer;
+  margin: 10px;
+  position: fixed;
+  right: 20px;
+
+}
+
+/* Botão para fechar o menu */
+.close-menu {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  padding: 0;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.close-menu:hover {
+  transform: scale(1.2); /* Leve efeito de zoom ao passar o mouse */
+  color: #000000; /* Muda a cor ao passar o mouse */
+}
+
+/* Menu mobile inicialmente escondido */
+.menu-mobile {
+  display: none;
+  background-color: #860508;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 80vh;
+  z-index: 1000;
+  padding: 40px;
+
+}
+
+.menu-mobile ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-mobile ul li {
+  margin: 20px 0;
+}
+
+.menu-mobile ul li a {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 20px 0;
+  display: block;
+}
+.menu-mobile ul li a:hover {
+  color: #000000; /* Cor diferente ao passar o mouse */
+  transform: scale(1.1); /* Leve aumento no tamanho */
+  background-color: #ffffff7e;
+}
+
+main {
+    background-color: #860508; /* Cor do meio */
+    color: white; /* Cor do texto no meio */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos básicos para o banner */
+.banner {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.banner img {
+  width: 350px; /* Tamanho ajustado para 350px */
+  height: auto; /* Mantém a proporção da imagem */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.banner img:hover {
+  transform: scale(1.1); /* Efeito de hover */
+}
+/* Estilos básicos para o banner */
+.banner2 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.banner2 img {
+  width: 350px; /* Tamanho ajustado para 350px */
+  height: auto; /* Mantém a proporção da imagem */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.banner2 img:hover {
+  transform: scale(1.1); /* Efeito de hover */
+}
+
+.banner3 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.banner3 img {
+  width: 350px; /* Defina o tamanho das miniaturas */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.banner3 img:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+
+
+
+

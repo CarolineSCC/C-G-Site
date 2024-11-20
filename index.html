@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen">
+    <title>C+G</title>
+</head>
+<body>
+  <header>
+      <div class="menu-mobile-toggle" onclick="toggleMenu()">
+          ☰
+      </div>
+      <nav class="menu-desktop">
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="fotos.html">FOTOS</a></li>
+              <li><a href="takes.html">FILMES</a></li>
+              <li><a href="musica.html">MÚSICAS</a></li>
+              <li><a href="data.html">DATA</a></li>
+              <li><a href="lembrete.html">LEMBRETE</a></li>
+          </ul>
+      </nav>
+      <nav class="menu-mobile">
+        <button class="close-menu" onclick="toggleMenu()">×</button>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="fotos.html">FOTOS</a></li>
+              <li><a href="takes.html">FILMES</a></li>
+              <li><a href="musica.html">MÚSICAS</a></li>
+              <li><a href="data.html">DATA</a></li>
+              <li><a href="lembrete.html">LEMBRETE</a></li>
+          </ul>
+      </nav>
+  </header>
+  <script src="menu.js"></script>
+
+
+    <main>
+        <div class="div-slider">
+            <ul class="slides-front">
+              <input type="radio" name="radio-btn" id="img-1" checked="">
+              <li class="slide-container">
+                 <div class="slide">
+                   <img src="IMG/1.png">
+                 </div>
+                 <div class="nav">
+                   <label for="img-1" class="prev">‹</label>
+                   <label for="img-2" class="next">›</label>
+                 </div>
+              </li>
+          
+              <input type="radio" name="radio-btn" id="img-2">
+              <li class="slide-container">
+                  <div class="slide">
+                    <img src="IMG/2.png">
+                  </div>
+              <div class="nav">
+                <label for="img-2" class="prev">‹</label>
+                <label for="img-1" class="next">›</label>
+              </div>
+              </li>
+          
+              <li class="nav-dots">
+                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+              </li>
+            </ul>
+          </div>
+    </main>
+</body>
+</html>

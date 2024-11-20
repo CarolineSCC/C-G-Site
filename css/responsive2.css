@@ -1,0 +1,37 @@
+
+@media screen and (max-width: 590px){
+    .text {
+        font-size: 12px;
+    }
+    .banner {
+        display:inline;
+      }
+      .banner img {
+        width: 330px; /* Defina o tamanho das miniaturas */
+      }
+      
+      .banner2 {
+        display: inline;
+      }
+      .banner2 img {
+        width: 330px; /* Defina o tamanho das miniaturas */
+      }
+      .banner3 {
+        display: inline;
+      }
+      .banner3 img {
+        width: 330px; /* Defina o tamanho das miniaturas */
+      }
+  }
+
+  
+/* Tornar o botão visível em telas pequenas */
+@media screen and (max-width: 768px) {
+  .menu-desktop {
+      display: none;
+  }
+
+  .menu-mobile-toggle {
+      display: block;
+  }
+}

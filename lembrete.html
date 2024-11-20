@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilol.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
+    <title>C+G</title>
+</head>
+<body>
+    <header>
+        <div class="menu-mobile-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="fotos.html">FOTOS</a></li>
+                <li><a href="takes.html">FILMES</a></li>
+                <li><a href="musica.html">MÚSICAS</a></li>
+                <li><a href="data.html">DATA</a></li>
+                <li><a href="lembrete.html">LEMBRETE</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-mobile">
+          <button class="close-menu" onclick="toggleMenu()">×</button>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="fotos.html">FOTOS</a></li>
+                <li><a href="takes.html">FILMES</a></li>
+                <li><a href="musica.html">MÚSICAS</a></li>
+                <li><a href="data.html">DATA</a></li>
+                <li><a href="lembrete.html">LEMBRETE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="menu.js"></script>
+
+<main>
+    <div class="parallax"></div>
+
+    <!-- Conteúdo Principal -->
+    <div class="content">
+        <h1>Carta Aberta para Você</h1>
+        <p>Meu amor,</p>
+        <p>
+            Estou aqui para te lembrar o meu amor por você. 
+            Sou muito grata por ter você na minha vida e estou sendo tão feliz ao seu lado, quero viver cada momento contigo, acompanhar suas conquistas e ser seu apoio em tudo. 
+            Amo tudo em você, seu abraço quentinho, seu jeitinho de me pertubar, seu beijo e infinitas outras coisas que me fazem te amar cada dia mais. 
+        </p>
+        <p>
+            Eu te amo da maneira mais pura e sincera que pode existir, eu te amo com todo o meu ser, e até mais do que as palavras podem expressar.
+        </p>
+        <p class="heart">💖 Com todo meu amor, Carol 💖</p>
+        <button class="btn" onclick="showSurprise()">Clique para uma surpresa</button>
+    </div>
+
+    <!-- Corações Flutuantes -->
+    <div class="floating-heart"></div>
+    <div class="floating-heart"></div>
+    <div class="floating-heart"></div>
+    <div class="floating-heart"></div>
+    <div class="floating-heart"></div>
+
+    <!-- Script -->
+    <script>
+        function showSurprise() {
+            alert('Eu te amo muito de muitão meu amor 💖');
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+</main>
+
+
+</html>
